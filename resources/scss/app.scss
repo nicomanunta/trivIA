@@ -6,6 +6,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    background-color: #F8F9FA;
 }
 
 
@@ -44,6 +45,170 @@
     background-color: #E3F2FD;
 }
 
+//bottone categoria
+.button-category{
+    position:relative;
+    display:inline-block;
+    margin:20px;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    width: 100%;
+    font-size: 25px;
+    
+}
+
+.button-category a{
+    color:white;
+    text-align: center;
+    width: 100%;
+    text-decoration:none;
+    
+    display:block;
+    position:relative;
+    padding:20px 0px;
+    
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+    
+    
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.button-category a:active{
+    top:10px;
+    
+    
+    
+}
+
+.button-category:after{
+    content:"";
+    height:100%;
+    width:100%;
+    padding:4px;
+    position: absolute;
+    bottom:-15px;
+    left:-4px;
+    z-index:-1;
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
 
 
+//bottone geografia
+.button-geography a{ 
+    background-color:#1E90FF;
+    -webkit-box-shadow:inset 0 1px 0 #B3D9FF, 0 10px 0 #005A9C;
+    -moz-box-shadow:inset 0 1px 0 #B3D9FF, 0 10px 0 #005A9C;
+    box-shadow:inset 0 1px 0 #B3D9FF, 0 10px 0 #005A9C;
+}
+.button-geography a:active{
+    background-color:#0077E6; 
+    -webkit-box-shadow:inset 0 1px 0 #B3D9FF, inset 0 -3px 0 #005A9C;
+    -moz-box-shadow:inset 0 1px 0 #B3D9FF, inset 0 -3pxpx 0 #005A9C;
+    box-shadow:inset 0 1px 0 #B3D9FF, inset 0 -3px 0 #005A9C;
+}
+.button-geography:after{ 
+    background-color:#00223D;
+}
 
+//bottone spettacolo
+.button-entertainment a{
+    background-color:#FF69B4;
+    -webkit-box-shadow:inset 0 1px 0 #FFC1DC, 0 10px 0 #B23C85;
+    -moz-box-shadow:inset 0 1px 0 #FFC1DC, 0 10px 0 #B23C85;
+    box-shadow:inset 0 1px 0 #FFC1DC, 0 10px 0 #B23C85;   
+}
+.button-entertainment a:active{
+    background-color:#E63996;
+    -webkit-box-shadow:inset 0 1px 0 #FFC1DC, inset 0 -3px 0 #B23C85;
+    -moz-box-shadow:inset 0 1px 0 #FFC1DC, inset 0 -3pxpx 0 #B23C85;
+    box-shadow:inset 0 1px 0 #FFC1DC, inset 0 -3px 0 #B23C85;
+}
+.button-entertainment:after{
+    background-color:#611C44;
+}
+
+//bottone storia
+.button-history a{
+    background-color:#FFD700;
+    -webkit-box-shadow:inset 0 1px 0 #FFF4BF, 0 10px 0 #997700;
+    -moz-box-shadow:inset 0 1px 0 #FFF4BF, 0 10px 0 #997700;
+    box-shadow:inset 0 1px 0 #FFF4BF, 0 10px 0 #997700;
+}
+
+.button-history a:active{
+    background-color:#E0B200;
+    -webkit-box-shadow:inset 0 1px 0 #FFF4BF, inset 0 -3px 0 #997700;
+    -moz-box-shadow:inset 0 1px 0 #FFF4BF, inset 0 -3pxpx 0 #997700;
+    box-shadow:inset 0 1px 0 #FFF4BF, inset 0 -3px 0 #997700;
+}
+
+.button-history:after{
+    background-color:#332600;
+}
+
+//bottone arte e letteratura
+.button-literature a{
+    background-color:#8B4513;   
+    -webkit-box-shadow:inset 0 1px 0 #D2A679, 0 10px 0 #5E2E0D;
+    -moz-box-shadow:inset 0 1px 0 #D2A679, 0 10px 0 #5E2E0D;
+    box-shadow:inset 0 1px 0 #D2A679, 0 10px 0 #5E2E0D;
+}
+
+.button-literature a:active{
+    background-color:#A05A1C;
+    -webkit-box-shadow:inset 0 1px 0 #D2A679, inset 0 -3px 0 #5E2E0D;
+    -moz-box-shadow:inset 0 1px 0 #D2A679, inset 0 -3pxpx 0 #5E2E0D;
+    box-shadow:inset 0 1px 0 #D2A679, inset 0 -3px 0 #5E2E0D;
+}
+
+.button-literature:after{
+    background-color:#2F1606;
+}
+
+//bottone natura e scienza
+.button-science a{
+    background-color:#008000;
+    -webkit-box-shadow:inset 0 1px 0 #99D099, 0 10px 0 #005900;
+    -moz-box-shadow:inset 0 1px 0 #99D099, 0 10px 0 #005900;
+    box-shadow:inset 0 1px 0 #99D099, 0 10px 0 #005900;
+}
+
+.button-science a:active{
+    background-color:#00A000;
+    -webkit-box-shadow:inset 0 1px 0 #99D099, inset 0 -3px 0 #005900;
+    -moz-box-shadow:inset 0 1px 0 #99D099, inset 0 -3pxpx 0 #005900;
+    box-shadow:inset 0 1px 0 #99D099, inset 0 -3px 0 #005900;
+}
+
+.button-science:after{
+    background-color:#002400;
+}
+
+
+//bottone hobby e sport
+.button-sports a{
+    background-color:#fa5a20;   
+    -webkit-box-shadow:inset 0 1px 0 #FFA07A, 0 10px 0 #B33000;
+    -moz-box-shadow:inset 0 1px 0 #FFA07A, 0 10px 0 #B33000;
+    box-shadow:inset 0 1px 0 #FFA07A, 0 10px 0 #B33000;
+}
+
+.button-sports a:active{
+    background-color:#FF6347;
+    -webkit-box-shadow:inset 0 1px 0 #FFA07A, inset 0 -3px 0 #B33000;
+    -moz-box-shadow:inset 0 1px 0 #FFA07A, inset 0 -3pxpx 0 #B33000;
+    box-shadow:inset 0 1px 0 #FFA07A, inset 0 -3px 0 #B33000;
+}
+
+.button-sports:after{
+    background-color:#661B00;
+}
