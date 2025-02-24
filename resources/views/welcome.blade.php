@@ -22,43 +22,42 @@
     <body class="general-bgcolor">
        <div class="container">
             <div class="row">
-               
-                    {{-- Geografia --}}
-                    <div class="col-2">
-                        <div class="button-category button-geography">
-                          <a href="#">Geografia</a>
-                        </div>
+                {{-- Geografia --}}
+                <div class="col-2">
+                    <div class="button-category button-geography">
+                        <a href="#">Geografia</a>
                     </div>
-                    {{-- Spettacolo --}}
-                    <div class="col-2">
-                        <div class="button-category button-entertainment">
-                          <a href="#">Spettacolo</a>
-                        </div>
+                </div>
+                {{-- Spettacolo --}}
+                <div class="col-2">
+                    <div class="button-category button-entertainment">
+                        <a href="#">Spettacolo</a>
                     </div>
-                    {{-- Storia --}}
-                    <div class="col-2">
-                        <div class="button-category button-history">
-                          <a href="#">Storia</a>
-                        </div>
+                </div>
+                {{-- Storia --}}
+                <div class="col-2">
+                    <div class="button-category button-history">
+                        <a href="#">Storia</a>
                     </div>
-                    {{-- Arte/Letteratura --}}
-                    <div class="col-2">
-                        <div class="button-category button-literature">
-                          <a href="#">Letteratura</a>
-                        </div>
+                </div>
+                {{-- Arte/Letteratura --}}
+                <div class="col-2">
+                    <div class="button-category button-literature">
+                        <a href="#">Letteratura</a>
                     </div>
-                    {{-- Natura/Scienza --}}
-                    <div class="col-2">
-                        <div class="button-category button-science">
-                          <a href="#">Scienza</a>
-                        </div>
+                </div>
+                {{-- Natura/Scienza --}}
+                <div class="col-2">
+                    <div class="button-category button-science">
+                        <a href="#">Scienza</a>
                     </div>
-                    {{-- Hobby/Sport --}}
-                    <div class="col-2">
-                        <div class="button-category button-sports">
-                          <a href="#">Hobby</a>
-                        </div>
+                </div>
+                {{-- Hobby/Sport --}}
+                <div class="col-2">
+                    <div class="button-category button-sports">
+                        <a href="#">Hobby</a>
                     </div>
+                </div>
                 
             </div>
         </div>
