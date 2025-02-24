@@ -1,6 +1,49 @@
 @import 'bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
+
+
+.title-font{
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #007BFF;
+}
+.question-font{
+    font-family: "Nunito", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #222222;
+}
+.answer-font{
+    font-family: "Nunito", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #333333;
+}
+.button-font{
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #FFFFFF;
+    background-color: #00C897;
+    &:hover{
+        background-color: #009579;
+    }
+}
+.general-bgcolor{
+    background-color: #F8F9FA;
+}
+.section-bgcolor{
+    background-color: #E3F2FD;
+}
+
+
+
+
