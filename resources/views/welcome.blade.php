@@ -20,8 +20,14 @@
         @endif
     </head>
     <body class="general-bgcolor">
-       <div class="container">
-            <div class="row">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12">
+                    <h1 class="text-center title-font my-5">trivIA</h1>
+                    <h1 class="text-center question-font">Seleziona una categoria con cui giocare!</h1>
+                </div>
+            </div>
+            <div class="row py-5">
                 {{-- Geografia --}}
                 <div class="col-2">
                     <div class="button-category button-geography">

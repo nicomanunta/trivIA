@@ -14,13 +14,14 @@
     font-family: "Montserrat", serif;
     font-weight: 700;
     font-style: normal;
-    color: #007BFF;
+   
 }
 .question-font{
     font-family: "Nunito", serif;
     font-weight: 400;
     font-style: normal;
     color: #222222;
+   
 }
 .answer-font{
     font-family: "Nunito", serif;
@@ -49,7 +50,6 @@
 .button-category{
     position:relative;
     display:inline-block;
-    margin:20px;
     font-family: "Poppins", serif;
     font-weight: 700;
     font-style: normal;
@@ -95,7 +95,6 @@
     bottom:-15px;
     left:-4px;
     z-index:-1;
-    
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -115,9 +114,7 @@
     -moz-box-shadow:inset 0 1px 0 #B3D9FF, inset 0 -3pxpx 0 #005A9C;
     box-shadow:inset 0 1px 0 #B3D9FF, inset 0 -3px 0 #005A9C;
 }
-.button-geography:after{ 
-    background-color:#00223D;
-}
+
 
 //bottone spettacolo
 .button-entertainment a{
@@ -132,9 +129,7 @@
     -moz-box-shadow:inset 0 1px 0 #FFC1DC, inset 0 -3pxpx 0 #B23C85;
     box-shadow:inset 0 1px 0 #FFC1DC, inset 0 -3px 0 #B23C85;
 }
-.button-entertainment:after{
-    background-color:#611C44;
-}
+
 
 //bottone storia
 .button-history a{
@@ -151,9 +146,7 @@
     box-shadow:inset 0 1px 0 #FFF4BF, inset 0 -3px 0 #997700;
 }
 
-.button-history:after{
-    background-color:#332600;
-}
+
 
 //bottone arte e letteratura
 .button-literature a{
@@ -170,9 +163,6 @@
     box-shadow:inset 0 1px 0 #D2A679, inset 0 -3px 0 #5E2E0D;
 }
 
-.button-literature:after{
-    background-color:#2F1606;
-}
 
 //bottone natura e scienza
 .button-science a{
@@ -189,9 +179,6 @@
     box-shadow:inset 0 1px 0 #99D099, inset 0 -3px 0 #005900;
 }
 
-.button-science:after{
-    background-color:#002400;
-}
 
 
 //bottone hobby e sport
@@ -209,6 +196,3 @@
     box-shadow:inset 0 1px 0 #FFA07A, inset 0 -3px 0 #B33000;
 }
 
-.button-sports:after{
-    background-color:#661B00;
-}
