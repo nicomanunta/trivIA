@@ -25,10 +25,9 @@
     @endif
 </head>
 
-<body>
-    <main class="bg-color-purple min-vh-100 ">
-        @yield('content')
-    </main>
-</body>
+
+@yield('content')
+    
+
 
 </html>
