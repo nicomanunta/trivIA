@@ -77,12 +77,12 @@ class QuizController extends Controller
 
         // Mappa categorie -> viste Blade
         $categoryViews = [
-            'geografia' => 'geography',
-            'spettacolo' => 'entertainment',
-            'storia' => 'history',
-            'letteratura' => 'literature',
-            'scienze' => 'science',
-            'hobby' => 'hobby',
+            'geografia' => 'category.geography',
+            'spettacolo' => 'category.entertainment',
+            'storia' => 'category.history',
+            'letteratura' => 'category.literature',
+            'scienze' => 'category.science',
+            'hobby' => 'category.hobby',
         ];
 
         if (!isset($categoryViews[$category])) {

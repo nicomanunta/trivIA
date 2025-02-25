@@ -3,7 +3,7 @@
 @section('content')
     <body>
         <main>
-            
+            scienze
         </main>
     </body>
 @endsection

@@ -31,37 +31,37 @@
                 {{-- Geografia --}}
                 <div class="col-2">
                     <div class="button-category button-geography">
-                        <a href="#">Geografia</a>
+                        <a href="{{ route('categoria.show', ['category' => 'geografia']) }}">Geografia</a>
                     </div>
                 </div>
                 {{-- Spettacolo --}}
                 <div class="col-2">
                     <div class="button-category button-entertainment">
-                        <a href="#">Spettacolo</a>
+                        <a href="{{ route('categoria.show', ['category' => 'spettacolo']) }}">Spettacolo</a>
                     </div>
                 </div>
                 {{-- Storia --}}
                 <div class="col-2">
                     <div class="button-category button-history">
-                        <a href="#">Storia</a>
+                        <a href="{{ route('categoria.show', ['category' => 'storia']) }}">Storia</a>
                     </div>
                 </div>
                 {{-- Arte/Letteratura --}}
                 <div class="col-2">
                     <div class="button-category button-literature">
-                        <a href="#">Letteratura</a>
+                        <a href="{{ route('categoria.show', ['category' => 'letteratura']) }}">Letteratura</a>
                     </div>
                 </div>
                 {{-- Natura/Scienza --}}
                 <div class="col-2">
                     <div class="button-category button-science">
-                        <a href="#">Scienza</a>
+                        <a href="{{ route('categoria.show', ['category' => 'scienze']) }}">Scienze</a>
                     </div>
                 </div>
                 {{-- Hobby/Sport --}}
                 <div class="col-2">
                     <div class="button-category button-hobby">
-                        <a href="#">Hobby</a>
+                        <a href="{{ route('categoria.show', ['category' => 'hobby']) }}">Hobby</a>
                     </div>
                 </div>
                 
