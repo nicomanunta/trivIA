@@ -60,7 +60,7 @@
                 </div>
                 {{-- Hobby/Sport --}}
                 <div class="col-2">
-                    <div class="button-category button-sports">
+                    <div class="button-category button-hobby">
                         <a href="#">Hobby</a>
                     </div>
                 </div>
