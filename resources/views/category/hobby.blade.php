@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <body>
+    <body class="hobby-bgcolor vh-100">
         <main>
             hobby
         </main>

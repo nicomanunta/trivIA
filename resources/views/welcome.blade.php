@@ -19,7 +19,7 @@
             </style>
         @endif
     </head>
-    <body class="general-bgcolor">
+    <body class="general-bgcolor vh-100">
         <div class="container">
             <div class="row ">
                 <div class="col-12">

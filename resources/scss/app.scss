@@ -6,7 +6,6 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    background-color: #FFF8E1;
 }
 
 
@@ -46,7 +45,7 @@
     background-color: #E3F2FD;
 }
 
-//bottone categoria
+// bottoni categorie
 .button-category{
     position:relative;
     display:inline-block;
@@ -101,7 +100,7 @@
 }
 
 
-//bottone geografia
+// geografia
 .button-geography a{ 
     background-color:#1E90FF;
     -webkit-box-shadow:inset 0 1px 0 #B3D9FF, 0 10px 0 #005A9C;
@@ -115,8 +114,13 @@
     box-shadow:inset 0 1px 0 #B3D9FF, inset 0 -3px 0 #005A9C;
 }
 
+.geography-bgcolor{
+    background-color: #1E90FF;
+    
+}
 
-//bottone spettacolo
+
+// bottoni spettacolo
 .button-entertainment a{
     background-color:#FF69B4;
     -webkit-box-shadow:inset 0 1px 0 #FFC1DC, 0 10px 0 #B23C85;
@@ -130,8 +134,12 @@
     box-shadow:inset 0 1px 0 #FFC1DC, inset 0 -3px 0 #B23C85;
 }
 
+.entertainment-bgcolor{
+    background-color: #FF69B4 ;
+}
 
-//bottone storia
+
+// bottoni storia
 .button-history a{
     background-color:#FFD700;
     -webkit-box-shadow:inset 0 1px 0 #FFF4BF, 0 10px 0 #997700;
@@ -146,9 +154,13 @@
     box-shadow:inset 0 1px 0 #FFF4BF, inset 0 -3px 0 #997700;
 }
 
+.history-bgcolor{
+    background-color: #FFD700;
+}
 
 
-//bottone arte e letteratura
+
+// bottoni arte e letteratura
 .button-literature a{
     background-color:#8B4513;   
     -webkit-box-shadow:inset 0 1px 0 #D2A679, 0 10px 0 #5E2E0D;
@@ -163,8 +175,12 @@
     box-shadow:inset 0 1px 0 #D2A679, inset 0 -3px 0 #5E2E0D;
 }
 
+.literature-bgcolor{
+    background-color: #8B4513;
+}
 
-//bottone natura e scienza
+
+// bottoni natura e scienza
 .button-science a{
     background-color:#008000;
     -webkit-box-shadow:inset 0 1px 0 #99D099, 0 10px 0 #005900;
@@ -179,9 +195,13 @@
     box-shadow:inset 0 1px 0 #99D099, inset 0 -3px 0 #005900;
 }
 
+.science-bgcolor{
+    background-color: #008000;
+}
 
 
-//bottone hobby e sport
+
+// bottoni hobby e sport
 .button-hobby a{
     background-color:#fa5a20;   
     -webkit-box-shadow:inset 0 1px 0 #FFA07A, 0 10px 0 #B33000;
@@ -194,5 +214,9 @@
     -webkit-box-shadow:inset 0 1px 0 #FFA07A, inset 0 -3px 0 #B33000;
     -moz-box-shadow:inset 0 1px 0 #FFA07A, inset 0 -3pxpx 0 #B33000;
     box-shadow:inset 0 1px 0 #FFA07A, inset 0 -3px 0 #B33000;
+}
+
+.hobby-bgcolor{
+    background-color: #fa5a20;
 }
 

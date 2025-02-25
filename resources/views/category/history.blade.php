@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <body>
+    <body class="history-bgcolor vh-100">
         <main>
             storia
         </main>
