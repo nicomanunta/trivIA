@@ -29,5 +29,25 @@
 @yield('content')
     
 
+<script>
+    document.querySelectorAll('.answer-link').forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Impedisce il comportamento predefinito del link
+            
+            let userAnswer = this.getAttribute('data-answer');
+            let correctAnswer = document.getElementById('correctAnswer').value;
+
+            // Verifica la risposta e mostra il messaggio
+            if (userAnswer === correctAnswer) {
+                document.getElementById('result-message').innerHTML = "<span style='color: green;'>Risposta corretta!</span>";
+            } else {
+                document.getElementById('result-message').innerHTML = "<span style='color: red;'>Risposta sbagliata!</span>";
+            }
+        });
+    });
+</script>
+    
+
+
 
 </html>
