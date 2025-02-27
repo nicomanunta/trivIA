@@ -23,8 +23,11 @@
     <body class="general-bgcolor vh-100">
         <div class="container">
             <div class="row ">
-                <div class="col-12">
-                    <h1 class="text-center title-font my-5">trivIA</h1>
+                <div class="col-12 mt-5 mb-3">
+                    <div class="text-center">
+                        <img src="{{URL::asset('/img/trivia.jpeg')}}" alt="">
+                    </div>
+                    <h1 class="text-center title-font my-5 app-name">trivIA</h1>
                     <h1 class="text-center question-font">Seleziona una categoria con cui giocare!</h1>
                 </div>
             </div>

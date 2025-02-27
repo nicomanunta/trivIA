@@ -5,7 +5,12 @@
         <main class="vh-100">
             <div class="container vh-100 ">
                 <div class="row align-content-center h-100">
-                    <div class="col-12 mb-4">
+                    <div class="col-12 mb-4 position-relative">
+                        <div class="text-center position-absolute container-logo">
+                            <a href="/">
+                                <img class="logo-category" src="{{URL::asset('/img/trivia.jpeg')}}" alt="">
+                            </a>
+                        </div>
                         <h1 class="category-name title-font text-center text-uppercase mb-3">Scienze </h1>
                         <div class="text-center"><i class="fa-solid fa-flask"></i></div>
                     </div>
@@ -27,7 +32,6 @@
 
                         </div>
                     
-                        <div id="result-message"></div> 
                     </form>
                 </div>
                 
