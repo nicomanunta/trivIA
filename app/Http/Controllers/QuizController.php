@@ -9,10 +9,6 @@ class QuizController extends Controller
 {
     public function generateQuestion($category){
 
-
-
-
-
         // COMMENTO CHIAMATA API
 
         // // recupero la chiave API dal file services.php
