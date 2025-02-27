@@ -31,21 +31,67 @@
     
 
 <script>
-    document.querySelectorAll('.answer-link').forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault(); // Impedisce il comportamento predefinito del link
-            
-            let userAnswer = this.getAttribute('data-answer');
-            let correctAnswer = document.getElementById('correctAnswer').value;
+    document.addEventListener('DOMContentLoaded', function () {
+        let answerLinks = document.querySelectorAll('.answer-link'); // Seleziona tutti i link delle risposte
+        let isAnswered = false; // Flag per impedire più risposte
 
-            // Verifica la risposta e mostra il messaggio
-            if (userAnswer === correctAnswer) {
-                document.getElementById('result-message').innerHTML = "<span style='color: green;'>Risposta corretta!</span>";
-            } else {
-                document.getElementById('result-message').innerHTML = "<span style='color: red;'>Risposta sbagliata!</span>";
-            }
+        answerLinks.forEach(link => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault(); // Impedisce la navigazione del link
+                
+                if (isAnswered) return; // Se già selezionata una risposta, ignora il click
+                isAnswered = true; // Blocca altre selezioni
+
+                let userAnswer = this.getAttribute('data-answer'); // Risposta selezionata
+                let correctAnswer = document.getElementById('correctAnswer').value; // Risposta corretta
+                
+                // Disabilita tutti i link per impedire altri clic
+                answerLinks.forEach(a => a.classList.add('disabled'));
+
+                let formData = new FormData();
+                formData.append('answer', userAnswer);
+                formData.append('correctAnswer', correctAnswer);
+                formData.append('_token', document.querySelector('input[name="_token"]').value); // CSRF Token
+
+                fetch("{{ route('quiz.verifica') }}", {
+                    method: "POST",
+                    body: formData,
+                    headers: {
+                        "X-CSRF-TOKEN": document.querySelector('input[name="_token"]').value
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    let selectedLink = this;
+
+                    // FASE 1: Lampeggio per 3 secondi
+                    let flashInterval = setInterval(() => {
+                        selectedLink.classList.toggle('flashing');
+                    }, 300);
+
+                    setTimeout(() => {
+                        clearInterval(flashInterval); // Ferma il lampeggio
+                        selectedLink.classList.remove('flashing');
+
+                        // FASE 2: Colora la risposta correttamente
+                        if (data.correct) {
+                            selectedLink.classList.add('correct'); // Verde se giusta
+                        } else {
+                            selectedLink.classList.add('wrong'); // Rossa se sbagliata
+                        }
+
+                        // FASE 3: Dopo altri 3 secondi, torna alla home
+                        setTimeout(() => {
+                            window.location.href = "{{ url('/') }}";
+                        }, 3000);
+                    }, 3000);
+                });
+            });
         });
     });
+
+
+
 </script>
     
 
