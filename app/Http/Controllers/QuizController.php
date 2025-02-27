@@ -75,7 +75,6 @@ class QuizController extends Controller
         // // Errore nel recupero della domanda
         // return back()->with('error', 'Errore nella generazione della domanda');
 
-        // Mappa categorie -> viste Blade
         $categoryViews = [
             'geografia' => 'category.geography',
             'spettacolo' => 'category.entertainment',
@@ -121,10 +120,10 @@ class QuizController extends Controller
             ],
         ];
 
-        // Recuperiamo la domanda per la categoria scelta
+        
         $quizData = $questions[$category];
 
-        // Passiamo i dati alla vista
+       
         return view($categoryViews[$category], [
             'question' => $quizData['question'],
             'options' => $quizData['options'],
