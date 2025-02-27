@@ -212,12 +212,44 @@
 }
 
 
+
+
+
+
+.button-answer{
+    position:relative;
+    display:inline-block;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    width: 100%;
+    font-size: 25px; 
+}
+
+.button-answer a{
+    color:white;
+    text-align: center;
+    width: 100%;
+    text-decoration:none;
+    display:block;
+    position:relative;
+    padding:10px 0px; 
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
 .button-answer a{ 
     color: #333333;
     background-color:#FFF8E1;
     -webkit-box-shadow:inset 0 1px 0 #FFFBEA, 0 10px 0 #CCB871;
     -moz-box-shadow:inset 0 1px 0 #FFFBEA, 0 10px 0 #CCB871;
     box-shadow:inset 0 1px 0 #FFFBEA, 0 10px 0 #CCB871;
+    text-shadow: 0px !important;
+    
+    
 }
 .button-answer a:active{
     background-color:#FFE8A1; 
@@ -225,6 +257,34 @@
     -moz-box-shadow:inset 0 1px 0 #FFFBEA, inset 0 -3pxpx 0 #CCB871;
     box-shadow:inset 0 1px 0 #FFFBEA, inset 0 -3px 0 #CCB871;
 }
+
+.category-name, .fa-earth-americas, .fa-masks-theater, .fa-basketball, .fa-book, .fa-flask, .fa-landmark{
+    font-size: 80px;
+    color: #FFF8E1;
+    text-shadow: 3px 3px 0px black;
+}
+
+.question-text{
+    font-size: 80px;
+    background-color: #FFF8E1;
+    padding: 10px 0px;
+    border-radius: 8px;
+
+
+}
+
+.answer-link{
+    font-size: 50px;
+}
+
+
+// <i class="fa-solid fa-basketball"></i> hobby
+// <i class="fa-solid fa-masks-theater"></i> spettacolo
+//<i class="fa-solid fa-book"></i> letteratura
+// <i class="fa-solid fa-earth-americas"></i> geografia
+//<i class="fa-solid fa-flask"></i> scienze
+//<i class="fa-solid fa-landmark"></i> storia
+
 
  
 

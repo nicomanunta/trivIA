@@ -2,37 +2,38 @@
 
 @section('content')
     <body class="entertainment-bgcolor vh-100">
-        <main>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h1 class="title-font text-center">Spettacolo</h1>
+        <main class="vh-100">
+            <div class="container vh-100 ">
+                <div class="row align-content-center h-100">
+                    <div class="col-12 mb-4">
+                        <h1 class="category-name title-font text-center text-uppercase mb-3">Spettacolo </h1>
+                        <div class="text-center"><i class="fa-solid fa-masks-theater"></i></div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="text-center">{{ $question }}</h2>
+                    <div class="col-12 my-4">
+                        <h2 class="question-text text-center mb-5">{{ $question }}</h2>
                     </div>
-                </div>
-                <form id="quiz-form">
-                    @csrf 
-                
-                    <input type="hidden" id="correctAnswer" value="{{ $correctAnswer }}"> 
-                    <div class="row">
-                        @foreach ($options as $option)
-                            <div class="col-6 mt-2 ">
-                                <div class="button-category button-answer">
-                                    <a href="#" class="answer-link" data-answer="{{ $option }}">{{ $option }}</a><br>
+                    <form id="quiz-form">
+                        @csrf 
+                    
+                        <input type="hidden" id="correctAnswer" value="{{ $correctAnswer }}"> 
+                        <div class="row align-content-center ">
+                            @foreach ($options as $option)
+                                <div class="col-6 mt-2 ">
+                                    <div class=" button-answer">
+                                        <a href="#" class="answer-link" data-answer="{{ $option }}">{{ $option }}</a><br>
+                                    </div>
                                 </div>
-                            </div>
-                        @endforeach
+                            @endforeach
 
-                    </div>
+                        </div>
+                    
+                        <div id="result-message"></div> 
+                    </form>
+                </div>
                 
-                    <div id="result-message"></div> {{-- Qui verrà mostrato il messaggio di esito --}}
-                </form>
                 
             </div>
+            
         </main>
     </body>
 @endsection
