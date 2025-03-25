@@ -1,66 +1,36 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# js-trivIA 🎲
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**js-trivIA** è una web app ispirata al gioco da tavolo **Trivial Pursuit**, che permette agli utenti di mettere alla prova la propria conoscenza scegliendo tra **sei categorie di domande**:
 
-## About Laravel
+-   🗺️ Geografia
+-   🎭 Spettacolo
+-   📜 Storia
+-   📚 Letteratura
+-   🔬 Scienze
+-   🎨 Hobby
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Una volta selezionata la categoria, verrà generata una domanda casuale con **quattro opzioni di risposta**, di cui solo una corretta. Grazie all'integrazione con **ChatGPT API**, la web app fornisce domande sempre nuove e dinamiche.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🚀 Funzionalità
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+-   **Selezione della categoria**: ogni categoria ha il proprio colore distintivo.
+-   **Generazione automatica delle domande**: le domande vengono ottenute tramite una chiamata API a **ChatGPT**.
+-   **Interazione con l'utente**:
+    -   L'utente seleziona una risposta tra le quattro disponibili.
+    -   Avvio di un'animazione che indica l'elaborazione della risposta.
+    -   Colorazione della risposta:
+        -   ✅ **Verde** se corretta.
+        -   ❌ **Rosso** se errata.
+    -   Dopo pochi secondi, l'utente viene reindirizzato alla schermata iniziale per una nuova partita.
+-   **Esperienza dinamica e coinvolgente**, grazie a timer e animazioni che rendono il gioco fluido e reattivo.
+-   **Responsive Design**: ottimizzato per desktop e dispositivi mobili.
 
-## Learning Laravel
+## 🛠️ Tecnologie Utilizzate
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+-   **Laravel**: per la gestione delle chiamate API e la logica backend.
+-   **HTML**: per la struttura della web app.
+-   **CSS/Bootstrap**: per il design e la responsività dell'interfaccia utente.
+-   **JavaScript**: per le animazioni, la gestione delle risposte e i timer.
+-   **ChatGPT API**: per la generazione dinamica delle domande.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+🎉 Gioca a **js-trivIA** e metti alla prova le tue conoscenze in un'esperienza divertente e interattiva!
