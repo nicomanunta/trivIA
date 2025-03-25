@@ -22,15 +22,12 @@ Una volta selezionata la categoria, verrà generata una domanda casuale con **qu
         -   ✅ **Verde** se corretta.
         -   ❌ **Rosso** se errata.
     -   Dopo pochi secondi, l'utente viene reindirizzato alla schermata iniziale per una nuova partita.
--   **Esperienza dinamica e coinvolgente**, grazie a timer e animazioni che rendono il gioco fluido e reattivo.
--   **Responsive Design**: ottimizzato per desktop e dispositivi mobili.
 
 ## 🛠️ Tecnologie Utilizzate
 
--   **Laravel**: per la gestione delle chiamate API e la logica backend.
+-   **Laravel**: per la gestione delle chiamate API.
 -   **HTML**: per la struttura della web app.
--   **CSS/Bootstrap**: per il design e la responsività dell'interfaccia utente.
+-   **CSS/Bootstrap**: per il design dell'interfaccia utente.
 -   **JavaScript**: per le animazioni, la gestione delle risposte e i timer.
 -   **ChatGPT API**: per la generazione dinamica delle domande.
 
-🎉 Gioca a **js-trivIA** e metti alla prova le tue conoscenze in un'esperienza divertente e interattiva!
